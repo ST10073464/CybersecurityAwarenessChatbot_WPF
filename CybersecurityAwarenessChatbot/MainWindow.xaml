@@ -84,19 +84,18 @@
 
                     <TextBlock Text="🔒 SECUREWIN CYBERSECURITY ASSISTANT 🔒"
                                Foreground="#00E5FF"
-                               FontSize="15"
+                               FontSize="16"
                                FontWeight="Bold"
-                               Margin="340,0,0,8"/>
+                               Margin="370,0,0,8"/>
 
                     <!-- ASCII ART -->
                     <ScrollViewer HorizontalScrollBarVisibility="Auto"
-                                  VerticalScrollBarVisibility="Auto"
-                                  Height="65">
+                                  VerticalScrollBarVisibility="Auto">
 
                         <TextBlock x:Name="AsciiArtText"
                                    Foreground="#7DF9FF"
                                    FontFamily="Consolas"
-                                   FontSize="8"
+                                   FontSize="10"
                                    FontWeight="Bold"
                                    TextWrapping="NoWrap"
                                    Margin="350,0,0,8"/>
