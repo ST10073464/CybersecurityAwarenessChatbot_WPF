@@ -84,23 +84,30 @@
 
                     <TextBlock Text="🔒 SECUREWIN CYBERSECURITY ASSISTANT 🔒"
                                Foreground="#00E5FF"
-                               FontSize="16"
+                               FontSize="15"
                                FontWeight="Bold"
-                               Margin="0,0,0,8"/>
+                               Margin="340,0,0,8"/>
 
                     <!-- ASCII ART -->
                     <ScrollViewer HorizontalScrollBarVisibility="Auto"
                                   VerticalScrollBarVisibility="Auto"
-                                  Height="90">
+                                  Height="65">
 
                         <TextBlock x:Name="AsciiArtText"
                                    Foreground="#7DF9FF"
                                    FontFamily="Consolas"
-                                   FontSize="7"
+                                   FontSize="8"
                                    FontWeight="Bold"
-                                   TextWrapping="NoWrap"/>
+                                   TextWrapping="NoWrap"
+                                   Margin="350,0,0,8"/>
 
                     </ScrollViewer>
+                    
+                    <TextBlock Text=" 🛡️ Protecting South African Citizens Online 🛡️" 
+                               Foreground="White" 
+                               FontSize="13" 
+                               Margin="400,0,0,8"/>
+                   
 
                 </StackPanel>
 
@@ -121,51 +128,32 @@
                                    FontSize="13"
                                    FontWeight="Bold"
                                    Margin="0,0,0,10"/>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
 
-                        <TextBlock Text="✅ Password Safety Tips"
-                                   Foreground="White"
-                                   FontSize="11"
-                                   Margin="0,3"/>
+                            <StackPanel Grid.Column="0">
+                                <TextBlock Text="✅ Ransomware Safety" Foreground="White" FontSize="11" Margin="0,3"/>
+                                <TextBlock Text="✅ VPN Security" Foreground="White" FontSize="11" Margin="0,3"/>
+                                <TextBlock Text="✅ Malware Protection" Foreground="White" FontSize="11" Margin="0,3"/>
+                            </StackPanel>
 
-                        <TextBlock Text="✅ Phishing Detection"
-                                   Foreground="White"
-                                   FontSize="11"
-                                   Margin="0,3"/>
+                            <StackPanel Grid.Column="1" Margin="10,0,0,0">
+                                <TextBlock Text="✅ Sentiment Detection" Foreground="White" FontSize="11" Margin="0,3"/>
+                                <TextBlock Text="✅ Smart Follow-up Conversations" Foreground="White" FontSize="11" Margin="0,3"/>
+                                <TextBlock Text="✅ Emoji Messaging" Foreground="White" FontSize="11" Margin="0,3"/>
+                            </StackPanel>
 
-                        <TextBlock Text="✅ Scam Awareness"
-                                   Foreground="White"
-                                   FontSize="11 "
-                                   Margin="0,3"/>
+                            <StackPanel Grid.Column="2" Margin="10,0,0,0">
+                                <TextBlock Text="✅ Password Safety Tips" Foreground="White" FontSize="11" Margin="0,3"/>
+                                <TextBlock Text="✅ Phishing Detection" Foreground="White" FontSize="11" Margin="0,3"/>
+                                <TextBlock Text="✅ Scam Awareness" Foreground="White" FontSize="11" Margin="0,3"/>
+                            </StackPanel>
 
-                        <TextBlock Text="✅ Malware Protection"
-                                   Foreground="White"
-                                   FontSize="11"
-                                   Margin="0,3"/>
-
-                        <TextBlock Text="✅ VPN Security"
-                                   Foreground="White"
-                                   FontSize="11"
-                                   Margin="0,3"/>
-
-                        <TextBlock Text="✅ Ransomware Safety"
-                                   Foreground="White"
-                                   FontSize="11"
-                                   Margin="0,3"/>
-
-                        <TextBlock Text="✅ Sentiment Detection"
-                                   Foreground="White"
-                                   FontSize="11"
-                                   Margin="0,3"/>
-
-                        <TextBlock Text="✅ Smart Follow-up Conversations"
-                                   Foreground="White"
-                                   FontSize="11"
-                                   Margin="0,3"/>
-
-                        <TextBlock Text="✅ Emoji Messaging"
-                                   Foreground="White"
-                                   FontSize="11"
-                                   Margin="0,3"/>
+                        </Grid>
 
                     </StackPanel>
 
@@ -222,82 +210,19 @@
 
                     <!-- USER INPUT -->
                     <TextBox x:Name="UserInputTextBox"
-                             Height="42"
-                             FontSize="15"
+                             Height="50"
+                             FontSize="20"
                              Padding="10"
                              Foreground="Black"
-                             Background="LightGreen"
+                             Background="White"
                              BorderBrush="#00C2FF"
                              CaretBrush="White"
                              KeyDown="UserInputTextBox_KeyDown"/>
 
-                    <!-- ================================================= -->
-                    <!-- EMOJIS -->
-                    <!-- ================================================= -->
-
-                    <WrapPanel Margin="0,8,0,0">
-
-                        <Button Content="😊"
-                                Width="45"
-                                Height="35"
-                                FontSize="18"
-                                Click="Emoji_Click"/>
-
-                        <Button Content="😎"
-                                Width="45"
-                                Height="35"
-                                FontSize="18"
-                                Click="Emoji_Click"/>
-
-                        <Button Content="😂"
-                                Width="45"
-                                Height="35"
-                                FontSize="18"
-                                Click="Emoji_Click"/>
-
-                        <Button Content="🤖"
-                                Width="45"
-                                Height="35"
-                                FontSize="18"
-                                Click="Emoji_Click"/>
-
-                        <Button Content="🔒"
-                                Width="45"
-                                Height="35"
-                                FontSize="18"
-                                Click="Emoji_Click"/>
-
-                        <Button Content="🛡️"
-                                Width="45"
-                                Height="35"
-                                FontSize="18"
-                                Click="Emoji_Click"/>
-
-                        <Button Content="⚠️"
-                                Width="45"
-                                Height="35"
-                                FontSize="18"
-                                Click="Emoji_Click"/>
-
-                        <Button Content="💻"
-                                Width="45"
-                                Height="35"
-                                FontSize="18"
-                                Click="Emoji_Click"/>
-
-                        <Button Content="🎣"
-                                Width="45"
-                                Height="35"
-                                FontSize="18"
-                                Click="Emoji_Click"/>
-
-                        <Button Content="🚨"
-                                Width="45"
-                                Height="35"
-                                FontSize="18"
-                                Click="Emoji_Click"/>
-
-                    </WrapPanel>
+                    <TextBlock Text=" 🛡️ Protecting South African Citizens Online 🛡️" 
+                               Foreground="White" 
+                               FontSize="13" 
+                               Margin="600,0,0,8"/>
 
                 </StackPanel>
 
@@ -309,7 +234,7 @@
                         x:Name="SendButton"
                         Content="📨 SEND"
                         Style="{StaticResource CyberButton}"
-                        Height="60"
+                        Height="42"
                         Width="95"
                         VerticalAlignment="Center"
                         HorizontalAlignment="Center"
