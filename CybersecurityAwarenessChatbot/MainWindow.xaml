@@ -102,12 +102,6 @@
                                    Margin="350,0,0,8"/>
 
                     </ScrollViewer>
-                    
-                    <TextBlock Text=" 🛡️ Protecting South African Citizens Online 🛡️" 
-                               Foreground="White" 
-                               FontSize="13" 
-                               Margin="400,0,0,8"/>
-                   
 
                 </StackPanel>
 
