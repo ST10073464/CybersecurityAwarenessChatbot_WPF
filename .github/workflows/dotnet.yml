@@ -1,0 +1,38 @@
+name: CybersecurityAwarenessChatbot Workflow
+
+on:
+  push:
+    branches: [ "master", "main" ]
+
+  pull_request:
+    branches: [ "master", "main" ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    strategy:
+      matrix:
+        configuration: [Debug, Release]
+
+    steps:
+
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup .NET 8
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Restore dependencies
+      run: dotnet restore CybersecurityAwarenessChatbot.slnx
+
+    - name: Build solution
+      run: dotnet build CybersecurityAwarenessChatbot.slnx --no-restore --configuration ${{ matrix.configuration }}
+
+    - name: Run tests
+      run: dotnet test --no-build --configuration ${{ matrix.configuration }}
